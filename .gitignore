@@ -1,0 +1,16 @@
+# Eclipse Project files
+.classpath
+.project
+.pydevproject
+.settings/
+.metadata
+
+# vi temp files
+*.swp
+
+# Temp files and directories
+temp/
+*~
+
+# Python temp files
+*.pyc
