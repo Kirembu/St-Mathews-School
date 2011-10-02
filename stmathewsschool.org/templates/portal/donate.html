@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>St. Mathews Sesinia School</title>
+		<link rel="stylesheet" type="text/css" href="../main.css" />
+	</head>
+	<body>
+		<div id='header'>
+			<a href="{% url portal.views.index %}"><img id='header-picture' src='../Classpicture.jpg'/></a>
+			<ol id='nav-bar'>
+				<li><a href="{% url portal.views.index %}">Home</a></li>
+				<li><a href="{% url portal.views.info %}">Info</a></li>
+				<li><a href="/portal.students/{{ student_instance.id }}" >Students</a></li>
+				<li><a href="{% url portal.views.teachers %}">Teachers</a></li>
+				<li><a class='selected' href="{% url portal.views.donate %}">Donate</a></li>
+			</ol>
+		</div>
+		<div id='main'>
+			<div id='donate-info'>
+				<h2>Please use paypal to donate: mail@stmathewsschool.org</h2>
+				<p>More ways to donate, including to individual students or teachers, coming soon<p>
+			</div>
+		</div>
+		<div id='footer'>
+		</div>
+	</body>
+</html>

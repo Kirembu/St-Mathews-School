@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>St. Mathews Sesinia School</title>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+	</head>
+	<body>
+		<div id='header'>
+			<a href="{% url portal.views.index %}"><img id='header-picture' src='Classpicture.jpg'/></a>
+			<ol id='nav-bar'>
+				<li><a class='selected' href="{% url portal.views.index %}">Home</a></li>
+				<li><a href="{% url portal.views.info %}">Info</a></li>
+				<li><a href="/portal.students/{{ student_instance.id }}" >Students</a></li>
+				<li><a href="{% url portal.views.teachers %}">Teachers</a></li>
+				<li><a href="{% url portal.views.donate %}">Donate</a></li>
+			</ol>
+		</div>
+		<div class='main'>
+			<p class='primary'>St. Mathews Sesinia School was founded in February 2007 by Peter and Esther. Run by our local Cowalenga CBO, 
+			and affiliated with <a href='http://plan-international.org/'>Plan International</a>. To identify and assist all orphaned and vulnerable children out of school 
+			due to lack of school fees access higher education through establishment of institutions of higher learning and 
+			enable them realize their full potential. Two orphans, Josephine and Fredrick Odhiambo, were our first students.</p>
+		</div>
+		<div id='footer'>
+		</div>
+	</body>
+</html>

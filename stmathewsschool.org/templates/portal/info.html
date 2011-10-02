@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title>St. Mathews Sesinia School</title>
+		<link rel="stylesheet" type="text/css" href="../main.css" />
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript" src="../menu.js"></script>
+	</head>
+	<body>
+		<div id='header'>
+			<a href="{% url portal.views.index %}"><img id='header-picture' src='../Classpicture.jpg'/></a>
+			<ol id='nav-bar'>
+				<li><a href="{% url portal.views.index %}">Home</a></li>
+				<li><a class='selected' href="{% url portal.views.info %}">Info</a></li>
+				<li><a href="/portal.students/{{ student_instance.id }}" >Students</a></li>
+				<li><a href="{% url portal.views.teachers %}">Teachers</a></li>
+				<li><a href="{% url portal.views.donate %}">Donate</a></li>
+			</ol>
+		</div>
+		<div id='main'>
+			<div class='side-menu'>
+				<ol id='info-list'>
+			        	<li><a id='btn-history' class='selected' onclick="sideMenuClick('history')">History</a></li>
+			        	<li><a id='btn-acomplishments' onclick="sideMenuClick('acomplishments')">Acomplishments</a></li>
+			        	<li><a id='btn-mission' onclick="sideMenuClick('mission')">Mission</a></li>
+			        	<li><a id='btn-vision' onclick="sideMenuClick('vision')">Vision</a></li>
+			        	<li><a id='btn-objectives' onclick="sideMenuClick('objectives')">Objectives</a></li>
+			        	<li><a id='btn-future' onclick="sideMenuClick('future')">Future Plans</a></li>
+				</ol>
+			</div>
+			<div class='content'>
+				<div class='details' id='history'>
+					<h3>History</h3>
+					<p>Peter and Esther founded St. Mathews Sesinia School in February 2007. Both were members of Cowalenga CBO which, as a fundee of Plan International, offered the Cowalenga Community payment of school fees, training in child rights, home based care, drug abuse counseling and peer education among other community services. When the Kenyan government announced free primary and secondary education Plan International dropped its funding and pulled out of Kenya. This left many poverty sticken communities with many children who could not afford hidden payments and fees at the government schools. There was a massive dropout of secondary level children that depended on Plan. This drove Peter and Esther to found St. Matthews Sesinia School.</p>
+					<p>When the school started it had three teachers with no secretary. The first term ended with three students and by the end of the second term there were a total of 7 students, and by the end of the third there were 12.</p>	
+				</div>
+				
+				<div class='details' id='acomplishments'>
+					<h3>Since inception St. Mathews Sesenia has:</h3>
+					<ol class='bulleted'>
+						<li>Assisted 150 children in accessing secondary school Education</li>
+						<li>Assisted 50 students in sitting for their KCSE national Examination. Of these 35 have been able to join colleges and some are now working</li>
+						<li>Given 20 orphaned and 40 vulnerable children secondary education</li>
+						<li>Helped nuture the talents of many children through various athletic activities such as football and volleyball</li>
+						<li>Employ ten members of staff, 7 teachers, a secretary a watchman and a messenger</li>
+					</ol>
+				</div>
+		
+				<div class='details' id='mission'>
+					<h3>Mission</h3>
+					<p>To identify and assist all orphaned and vulnerable children out of school due to lack of school fees
+					access higher education through establishment of institutions of higher learning and enable them realize
+					their full potential.</p>
+				</div>
+		
+				<div class='details' id='vision'>
+					<h3>Vision</h3>
+					<p>To try and narrow the gap between the rich and the poor through establishment of higher institutions
+					of learning, middle and higher levels accessible to the poor and vulnerable children at affordable rate to
+					enable each and everyone achieve his or her dreams in life.</p>
+				</div>
+				
+				<div id='future' class='details'>
+					<h3>Future Plans</h3>
+					<ol class='bulleted'>
+						<li>Purchase land for the school</li>
+						<li>Put all students on boarding program in order to accommodate more needy and vulnerable cases</li>
+						<li>Establish a middle level college in the next two years and a school university in the next ten to enable all students to achieve their long life dreams</li>
+					</ol>
+				</div>
+		
+				<div id='objectives' class='details'>
+					<h3>Objectives</h3>
+					<ol class='bulleted'>
+						<li>To identify all orphaned and vulnerable secondary going children who dropped out due to school fees and assist them in continuing their education so that they may realize their dreams</li>
+						<li>To give hope to those who had lost hope for their future</li>
+						<li>To narrow the gap between the rich and the poor</li>
+						<li>To establish a society full of hope where children are able to realize their full potential</li>
+						<li>To establish middle and higher level institutions of learning which could accommodate those children from poor families in order for them to complete their education</li>
+						<li>To liase with well wishers, donors and other like minded institutions to assist as many children as possible</li>
+					</ol>
+				<div>
+		
+			</div>
+		</div>
+	</body>
+</html>

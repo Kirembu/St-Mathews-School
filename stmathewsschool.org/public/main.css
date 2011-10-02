@@ -1,0 +1,169 @@
+/* RESET LINKS */
+a,a:hover, a:visited, a:link, a:active {
+	font-weight: normal;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* FONTS */
+body {
+	font-family: Verdana, Helvetica,sans-serif;
+	font-size: 15px;
+	color: #333333;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 4px;
+
+	a:link {color:#333333;}  
+	a:visited {color:#333333;}
+	a:hover {color:#333333;}
+}
+
+h1 { text-align: center; }
+
+h2 {
+	padding: 20px 0;
+	margin: 0;
+}
+
+#header-picture {
+	width: 600px;
+	margin-right:auto;
+	margin-left:auto;
+	display: block;
+}
+
+p {
+	font-size: 15px;
+	text-indent: 25px;
+	line-height: 200%;
+}
+
+ol {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.bulleted {
+	list-style-type: disc;
+}
+
+#nav-bar {
+	text-align: center;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 40px;
+}
+
+#nav-bar li {
+	float: left;
+	width: 120px;
+	height: 40px;
+}
+
+#nav-bar li a {
+	display: block;
+	text-transform: uppercase;
+	font-size: 15px;
+	background-color: #28436b;
+	color: white;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+#nav-bar li a:hover { background-color: #2A5494; }
+#nav-bar li a:active { background-color: #283950; }
+#nav-bar li a.selected { background-color: #2C66BD }
+
+.primary { padding-top: 20px; }
+
+.side-menu {
+	width: 175px;
+	position: relative;
+	left: -175px;
+	top: 20px;
+}
+
+.side-menu li {
+	text-align: left;
+	padding: 10px 0;
+}
+
+.side-menu li a {
+	background-color: #6b2843;
+	color: white;
+	display: block;
+	padding: 5px 10px;
+	border-radius: 3px;
+	font-weight: 700;
+}
+
+.side-menu li a:hover {
+	box-shadow: 0px 1px 2px black, 0px -50px 10px #903E5F inset;
+	text-shadow: 0px 1px 1px black;
+}
+
+.side-menu li a:active {
+	box-shadow: 0px 1px 5px #521C32 inset, 0px -1px 5px #521C32 inset, 0px -50px 10px #903E5F inset;
+	text-shadow: 0px 1px 1px black;
+}
+
+.side-menu li .selected {
+	background-color: #903E5F;
+}
+
+.content {
+	float: right;
+	width: 560px;
+	height: 1000px;
+	padding-left: 20px;
+	position: relative;
+	top: -300px;
+}
+
+.content .student-info {
+	position: relative;
+	top: -140px;
+}
+
+.content .student-info p, .content .student-info h2 {
+	position: relative;
+	top: -40px;
+}
+
+.content .student-info h2 {
+	clear: right;
+}
+
+.content li {
+	line-height: 200%;
+}
+
+.content img {
+	float: right;
+	width: 300px; 
+	padding-left: 25px;
+	padding-bottom: 40px;
+}
+
+.content p {
+	text-align: justify;
+}
+
+#donate-info p, #donate-info h2 {
+	text-indent: 0;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#teachers-info {
+	text-align: center;
+}
+
+#student-name {
+	float: left;
+}
